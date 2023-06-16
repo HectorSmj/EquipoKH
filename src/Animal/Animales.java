@@ -79,7 +79,7 @@ public class Animales extends javax.swing.JInternalFrame {
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Animal/Img.png"))); // NOI18N
 
-        ver.setBackground(new java.awt.Color(0, 255, 255));
+        ver.setBackground(new java.awt.Color(0, 255, 51));
         ver.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         ver.setText("Ver descripcion del perro...");
         ver.addActionListener(new java.awt.event.ActionListener() {
@@ -89,17 +89,22 @@ public class Animales extends javax.swing.JInternalFrame {
         });
 
         jTextField1.setEditable(false);
-        jTextField1.setBackground(new java.awt.Color(0, 255, 255));
+        jTextField1.setBackground(new java.awt.Color(51, 255, 51));
         jTextField1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField1.setText("Animal: Perro");
         jTextField1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         jTextField2.setEditable(false);
-        jTextField2.setBackground(new java.awt.Color(0, 255, 255));
+        jTextField2.setBackground(new java.awt.Color(0, 255, 0));
         jTextField2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField2.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
 
         salida.setColumns(20);
         salida.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -214,6 +219,10 @@ public class Animales extends javax.swing.JInternalFrame {
         
         
     }//GEN-LAST:event_verActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
